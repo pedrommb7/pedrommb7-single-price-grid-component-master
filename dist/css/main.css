@@ -1,2 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 body {
-  background: red; }
+  background: #98a6bd;
+  font-family: 'Karla', sans-serif; }
+  body .grid .item-community {
+    background: white; }
+    body .grid .item-community h3 {
+      color: #2ab2af; }
+    body .grid .item-community h4 {
+      color: #c0df34; }
+    body .grid .item-community p {
+      color: #98a6bd; }
+  body .grid .item-subscription {
+    background: #2ab2af; }
+    body .grid .item-subscription h2, body .grid .item-subscription h3 {
+      color: #e5eff5; }
+    body .grid .item-subscription .price h2 {
+      color: #e5eff5;
+      font-weight: 700; }
+    body .grid .item-subscription .price span {
+      color: rgba(229, 239, 245, 0.5);
+      font-weight: 400; }
+    body .grid .item-subscription p {
+      color: #e5eff5; }
+    body .grid .item-subscription button {
+      border-radius: 15px;
+      color: #e5eff5;
+      border-color: #c0df34;
+      background-color: #c0df34; }
+  body .grid .item-whyus {
+    background: #2ab2af; }
+    body .grid .item-whyus h3 {
+      color: #e5eff5; }
+    body .grid .item-whyus p {
+      color: rgba(229, 239, 245, 0.8); }
+  body footer .attribution {
+    font-size: 11px;
+    text-align: center; }
+  body footer .attribution a {
+    color: #3e52a3; }

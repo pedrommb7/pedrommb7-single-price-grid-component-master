@@ -1,5 +1,81 @@
-$color: red;
+//Settings: variables and definitions
+@import 'settings/index.scss';
 
 body {
-    background: $color;
+    background: $grayish-blue;
+    font-family: 'Karla', sans-serif;
+
+    .grid {
+
+        .item-community {
+            background: white;
+
+            h3 {
+                color: $cyan;
+            }
+
+            h4 {
+                color: $bright-yellow;
+            }
+
+            p {
+                color: $grayish-blue;
+            }
+        }
+
+        .item-subscription {
+            background: $cyan;
+
+            h2, h3 {
+                color: $light-gray;
+            }
+
+            .price h2 {
+                color: $light-gray;
+                font-weight: $sevenhundred;
+            }
+
+            .price span {
+                color: $gray;
+                font-weight: $fourhundred;
+            }
+
+            p {
+                color: $light-gray;
+            }
+
+            button {
+                border-radius: 15px;
+                color: $light-gray;
+                border-color: $bright-yellow;
+                background-color: $bright-yellow;
+            }
+
+        }
+
+        .item-whyus {
+            background: $cyan;
+
+            h3 {
+                color: $light-gray;
+            }
+
+            p {
+                color: $light-gray2;
+            }
+        }
+    }
+
+
+    footer {
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
 }
+
