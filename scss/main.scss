@@ -91,7 +91,7 @@ body {
         display: grid;
         grid-template-rows: 1fr 0.8fr 1fr;
         padding: 20px;
-        margin: 40px 0;
+        margin: 40px 0; 
         
         .item-community, .item-subscription, .item-whyus {
             padding: 25px;
@@ -139,8 +139,12 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 150px 300px;
-        padding: 0 200px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "item-community item-community"
+            "item-subscription item-whyus";
+        margin: 140px auto;
+        width: 800px;
         
 
         .item-community,
@@ -154,8 +158,8 @@ body {
         }
 
         .item-community {
-            grid-column: 1 / span 2;
             border-radius: 5px 5px 0 0;
+            grid-area: item-community;
 
             h4 {
                 padding-top: 8px;
@@ -166,6 +170,7 @@ body {
 
         .item-subscription {
             border-radius: 0 0 0 5px;
+            grid-area: item-subscription;
 
             .price {
                 display: flex;
@@ -184,6 +189,7 @@ body {
         }
 
         .item-whyus {
+            grid-area: item-whyus;
             border-radius: 0 0 5px 0;
         }
 

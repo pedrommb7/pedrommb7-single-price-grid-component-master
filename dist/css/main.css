@@ -76,8 +76,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 150px 300px;
-    padding: 0 200px; }
+    gap: 0px 0px;
+    grid-template-areas: "item-community item-community" "item-subscription item-whyus";
+    margin: 140px auto;
+    width: 800px; }
     .grid .item-community,
     .grid .item-subscription,
     .grid .item-whyus {
@@ -87,13 +89,14 @@ body {
       .grid .item-whyus h3 {
         margin-top: 0; }
     .grid .item-community {
-      grid-column: 1 / span 2;
-      border-radius: 5px 5px 0 0; }
+      border-radius: 5px 5px 0 0;
+      grid-area: item-community; }
       .grid .item-community h4 {
         padding-top: 8px;
         margin-bottom: 0; }
     .grid .item-subscription {
-      border-radius: 0 0 0 5px; }
+      border-radius: 0 0 0 5px;
+      grid-area: item-subscription; }
       .grid .item-subscription .price {
         display: flex;
         align-items: center; }
@@ -103,4 +106,5 @@ body {
       .grid .item-subscription button {
         width: 100%; }
     .grid .item-whyus {
+      grid-area: item-whyus;
       border-radius: 0 0 5px 0; } }
