@@ -58,6 +58,9 @@ body {
                 margin-top: 20px;
             }
 
+            button:hover {
+                background-color: $green;
+            }
         }
 
         .item-whyus {
@@ -182,7 +185,7 @@ body {
             }
 
             p,
-            button {
+            button, .button {
                 width: 100%;
             }
 

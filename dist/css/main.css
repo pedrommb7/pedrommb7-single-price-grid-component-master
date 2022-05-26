@@ -34,6 +34,8 @@ body {
       font-weight: 700;
       box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
       margin-top: 20px; }
+    body .grid .item-subscription button:hover {
+      background-color: #4CAF50; }
   body .grid .item-whyus {
     background: #2ab2af; }
     body .grid .item-whyus h3 {
@@ -103,7 +105,7 @@ body {
       .grid .item-subscription .price span {
         padding-left: 10px; }
       .grid .item-subscription p,
-      .grid .item-subscription button {
+      .grid .item-subscription button, .grid .item-subscription .button {
         width: 100%; }
     .grid .item-whyus {
       grid-area: item-whyus;
