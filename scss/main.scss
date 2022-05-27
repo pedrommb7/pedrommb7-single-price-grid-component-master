@@ -46,8 +46,7 @@ body {
                 margin-top: 0;
             }
 
-            .button {
-                display: flex;
+            button {
                 border-radius: 5px;
                 color: $light-gray;
                 border: none;
@@ -56,10 +55,10 @@ body {
                 font-weight: 700;
                 box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
                 margin-top: 20px;
-                text-decoration: none;
+                padding: 15px 100px;
             }
 
-            .button:hover {
+            button:hover {
                 background-color: $green;
             }
         }
@@ -120,8 +119,8 @@ body {
                 padding-left: 10px;
             }
 
-            .button {
-                padding: 15px 110px;
+            button {
+                width: 100%;
             }
 
             h3 {
@@ -185,8 +184,8 @@ body {
                 padding-left: 10px;
             }
 
-            .button{
-                padding: 15px 120px;
+            button{
+                width: 100%;
             }
 
         }
