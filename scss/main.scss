@@ -89,7 +89,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .grid {
         display: grid;
         grid-template-rows: 1fr 0.8fr 1fr;
@@ -137,7 +137,7 @@ body {
 }
 
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
