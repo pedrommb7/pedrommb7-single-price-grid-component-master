@@ -40,9 +40,12 @@ body {
     background: #2ab2af; }
     body .grid .item-whyus h3 {
       color: #e5eff5; }
-    body .grid .item-whyus p {
-      color: rgba(229, 239, 245, 0.8);
-      margin: 8px 0; }
+    body .grid .item-whyus ul {
+      padding: 0; }
+      body .grid .item-whyus ul li {
+        color: rgba(229, 239, 245, 0.8);
+        margin: 8px 0;
+        list-style: none; }
   body footer .attribution {
     font-size: 11px;
     text-align: center; }
