@@ -1,5 +1,6 @@
 //Settings: variables and definitions
 @import 'settings/index.scss';
+@import 'settings/mixins.scss';
 
 body {
     background: $grayish-blue2;
@@ -95,111 +96,7 @@ body {
     }
 }
 
-@media (max-width: 800px) {
-    .grid {
-        display: grid;
-        grid-template-rows: 1fr 0.8fr 1fr;
-        padding: 20px;
-        margin: 40px 0; 
-        
-        .item-community, .item-subscription, .item-whyus {
-            padding: 25px;
 
-            h3 {
-                margin-top: 0;
-            }
-        }
+@include max-width;
 
-        .item-community {
-            border-radius: 5px 5px 0 0;
-        }
-
-
-        .item-subscription {
-            .price {
-                display: flex;
-                align-items: center;
-            }
-
-            .price span {
-                padding-left: 10px;
-            }
-
-            button {
-                width: 100%;
-            }
-
-            h3 {
-                margin-bottom: 0;
-            }
-        }
-
-
-        .item-whyus {
-            border-radius: 0 0 5px 5px;
-        }
-    }
-
-}
-
-
-@media (min-width: 801px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "item-community item-community"
-            "item-subscription item-whyus";
-        margin: 140px auto;
-        width: 800px;
-        
-
-        .item-community,
-        .item-subscription,
-        .item-whyus {
-            padding: 50px;
-        
-            h3 {
-                margin-top: 0;
-            }
-        }
-
-        .item-community {
-            border-radius: 5px 5px 0 0;
-            grid-area: item-community;
-
-            h4 {
-                padding-top: 8px;
-                margin-bottom: 0;
-            }
-        }
-
-
-        .item-subscription {
-            border-radius: 0 0 0 5px;
-            grid-area: item-subscription;
-
-            .price {
-                display: flex;
-                align-items: center;
-            }
-
-            .price span {
-                padding-left: 10px;
-            }
-
-            button{
-                width: 100%;
-            }
-
-        }
-
-        .item-whyus {
-            grid-area: item-whyus;
-            border-radius: 0 0 5px 0;
-        }
-
-    }
-}
+@include min-width;
